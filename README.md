@@ -12,3 +12,25 @@ NSData
 
 Ignores:
 UIImage
+
+How to use it:
+
+    #import "NSObject+KJSerializer.h"
+    #import "YourObject.h"
+
+    YourObject * object = [YourObject new];
+    object.some_string = @"Hello World";
+    object.some_number = [NSNumber numberWithInt:7];
+    
+    // Convert NSObject to NSDictionary
+    NSDictionary * dictionary = [object getDictionary];
+    NSLog(@"Serialized: %@",dictionary.description);
+    
+    // Convert dictionary to JSON
+    
+    // Receive JSON and convert to NSDictionary
+    
+    // Convert NSDictionary back to your NSObject
+    YourObject * anotherObject = [YourObject new];
+    [anotherObject setDictionary:dictionary];
+    NSLog(@"Deserialized: %@ %@", anotherObject.some_string, anotherObject.some_number.stringValue);
