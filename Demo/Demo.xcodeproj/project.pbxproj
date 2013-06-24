@@ -20,6 +20,7 @@
 		9610CAEF1773B35E00A2A0D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610CAEE1773B35E00A2A0D2 /* ViewController.m */; };
 		9610CAF81773B36900A2A0D2 /* NSObject+KJSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610CAF71773B36900A2A0D2 /* NSObject+KJSerializer.m */; };
 		9610CAFB1773B38300A2A0D2 /* SomeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9610CAFA1773B38300A2A0D2 /* SomeObject.m */; };
+		964DFB651778555F00D786D0 /* linux.png in Resources */ = {isa = PBXBuildFile; fileRef = 964DFB641778555F00D786D0 /* linux.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9610CAF71773B36900A2A0D2 /* NSObject+KJSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KJSerializer.m"; sourceTree = "<group>"; };
 		9610CAF91773B38300A2A0D2 /* SomeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeObject.h; sourceTree = "<group>"; };
 		9610CAFA1773B38300A2A0D2 /* SomeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeObject.m; sourceTree = "<group>"; };
+		964DFB641778555F00D786D0 /* linux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linux.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		9610CAD81773B35E00A2A0D2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				964DFB641778555F00D786D0 /* linux.png */,
 				9610CAE11773B35E00A2A0D2 /* AppDelegate.h */,
 				9610CAE21773B35E00A2A0D2 /* AppDelegate.m */,
 				9610CAEA1773B35E00A2A0D2 /* MainStoryboard.storyboard */,
@@ -182,6 +185,7 @@
 				9610CAE71773B35E00A2A0D2 /* Default@2x.png in Resources */,
 				9610CAE91773B35E00A2A0D2 /* Default-568h@2x.png in Resources */,
 				9610CAEC1773B35E00A2A0D2 /* MainStoryboard.storyboard in Resources */,
+				964DFB651778555F00D786D0 /* linux.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +323,7 @@
 				9610CAF41773B35E00A2A0D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

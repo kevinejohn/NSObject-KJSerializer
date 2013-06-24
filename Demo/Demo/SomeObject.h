@@ -13,7 +13,7 @@
 @property (strong, nonatomic) NSString * some_string;
 @property (strong, nonatomic) NSNumber * some_number;
 
-// UIImages will not be serialized!
 @property (strong, nonatomic) UIImage  * some_image;
+@property (strong, nonatomic) NSData   * some_data;
 
 @end
