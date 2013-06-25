@@ -43,12 +43,15 @@
 -(void)setDictionary:(NSDictionary*)dictionary
 {
     [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
-        @try {
-            [self setValue:obj forKey:(NSString *)key];
-        }
-        @catch (NSException *exception) {
-            // Ignore
-            //NSLog(@"Exception while enumerating object: %@", exception.description);
+        // Don't set null objects. Skip "id"
+        if (![obj isMemberOfClass:[NSNull class]] && ![key isEqualToString:@"id"]) {
+            @try {
+                [self setValue:obj forKey:(NSString *)key];
+            }
+            @catch (NSException *exception) {
+                // Ignore
+                //NSLog(@"Exception while enumerating object: %@", exception.description);
+            }
         }
     }];
 }
